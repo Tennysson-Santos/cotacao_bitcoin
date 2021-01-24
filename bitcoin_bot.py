@@ -26,11 +26,10 @@ def erro(ws, error):
 def fechou(ws):
 	print("### Fechou ###")
 
-def ao_receber_mensagem(ws, mensagem):
+def ao_receber_mensagem(ws,mensagem):
 	mensagem = json.loads(mensagem)
 	price = (mensagem['data']['price'])
 	print('Cotação BTC:','$',price)
-
 
 
 if __name__ == "__main__":
